@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3D4B01EF-4E5B-47FF-9D35-6A7662519B05}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FlexPaper.AspNet</RootNamespace>
+    <AssemblyName>FlexPaper.AspNet</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin_files\controls\uploadify.swf" />
+    <Content Include="admin_files\css\install.css" />
+    <Content Include="admin_files\css\prettify.css" />
+    <Content Include="admin_files\images\bg_button_.png" />
+    <Content Include="admin_files\images\bg_head.png" />
+    <Content Include="admin_files\images\bg_process_active.gif" />
+    <Content Include="admin_files\images\bg_process_complete.gif" />
+    <Content Include="admin_files\images\bg_process_default.gif" />
+    <Content Include="admin_files\images\bg_process_prevactive.gif" />
+    <Content Include="admin_files\images\button_hdr_docs.png" />
+    <Content Include="admin_files\images\button_hdr_home.png" />
+    <Content Include="admin_files\images\cancel.png" />
+    <Content Include="admin_files\images\config.ini.win.aspx.png" />
+    <Content Include="admin_files\images\config.ini.win.php.png" />
+    <Content Include="admin_files\images\config.ini.win.php.windows2003.png" />
+    <Content Include="admin_files\images\delete.png" />
+    <Content Include="admin_files\images\flexpaper_logo.png" />
+    <Content Include="admin_files\images\footer_logo.gif" />
+    <Content Include="admin_files\images\icon_check_process_12px.gif" />
+    <Content Include="admin_files\images\icon_warn.png" />
+    <Content Include="admin_files\images\info_icon.png" />
+    <Content Include="admin_files\images\paper_lock.png" />
+    <Content Include="admin_files\images\reload.png" />
+    <Content Include="admin_files\images\std_btn_24_blue.png" />
+    <Content Include="admin_files\images\upload.png" />
+    <Content Include="admin_files\js\jquery.min.js" />
+    <Content Include="admin_files\js\jquery.uploadify.min.js" />
+    <Content Include="admin_files\js\pagination.js" />
+    <Content Include="admin_files\js\prettify.js" />
+    <Content Include="admin_files\js\swfobject.js" />
+    <Content Include="assets_zine\bar%402x.png" />
+    <Content Include="assets_zine\bar.png" />
+    <Content Include="assets_zine\bttnBookView%402x.png" />
+    <Content Include="assets_zine\bttnBookView.png" />
+    <Content Include="assets_zine\bttnDownload%402x.png" />
+    <Content Include="assets_zine\bttnDownload.png" />
+    <Content Include="assets_zine\bttnFind%402x.png" />
+    <Content Include="assets_zine\bttnFind.png" />
+    <Content Include="assets_zine\bttnFullscreen%402x.png" />
+    <Content Include="assets_zine\bttnFullscreen.png" />
+    <Content Include="assets_zine\bttnHand%402x.png" />
+    <Content Include="assets_zine\bttnHand.png" />
+    <Content Include="assets_zine\bttnPrevNext%402x.png" />
+    <Content Include="assets_zine\bttnPrevNext.png" />
+    <Content Include="assets_zine\bttnPrevPage%402x.png" />
+    <Content Include="assets_zine\bttnPrevPage.png" />
+    <Content Include="assets_zine\bttnPrint%402x.png" />
+    <Content Include="assets_zine\bttnPrint.png" />
+    <Content Include="assets_zine\bttnSinglePage%402x.png" />
+    <Content Include="assets_zine\bttnSinglePage.png" />
+    <Content Include="assets_zine\bttnSocialShare%402x.png" />
+    <Content Include="assets_zine\bttnSocialShare.png" />
+    <Content Include="assets_zine\bttnTextSelect%402x.png" />
+    <Content Include="assets_zine\bttnTextSelect.png" />
+    <Content Include="assets_zine\material\bar%402x.png" />
+    <Content Include="assets_zine\material\bar.png" />
+    <Content Include="assets_zine\material\bttnBookView%402x.png" />
+    <Content Include="assets_zine\material\bttnBookView.png" />
+    <Content Include="assets_zine\material\bttnDownload%402x.png" />
+    <Content Include="assets_zine\material\bttnDownload.png" />
+    <Content Include="assets_zine\material\bttnFind%402x.png" />
+    <Content Include="assets_zine\material\bttnFind.png" />
+    <Content Include="assets_zine\material\bttnFullscreen%402x.png" />
+    <Content Include="assets_zine\material\bttnFullscreen.png" />
+    <Content Include="assets_zine\material\bttnHand%402x.png" />
+    <Content Include="assets_zine\material\bttnHand.png" />
+    <Content Include="assets_zine\material\bttnPrevNext%402x.png" />
+    <Content Include="assets_zine\material\bttnPrevNext.png" />
+    <Content Include="assets_zine\material\bttnPrevPage%402x.png" />
+    <Content Include="assets_zine\material\bttnPrevPage.png" />
+    <Content Include="assets_zine\material\bttnPrint%402x.png" />
+    <Content Include="assets_zine\material\bttnPrint.png" />
+    <Content Include="assets_zine\material\bttnSinglePage%402x.png" />
+    <Content Include="assets_zine\material\bttnSinglePage.png" />
+    <Content Include="assets_zine\material\bttnSocialShare%402x.png" />
+    <Content Include="assets_zine\material\bttnSocialShare.png" />
+    <Content Include="assets_zine\material\bttnTextSelect%402x.png" />
+    <Content Include="assets_zine\material\bttnTextSelect.png" />
+    <Content Include="assets_zine\material\mobile\bttnBookView.png" />
+    <Content Include="assets_zine\material\mobile\bttnFind.png" />
+    <Content Include="assets_zine\material\mobile\bttnFullScreen.png" />
+    <Content Include="assets_zine\material\mobile\bttnPrevNext.png" />
+    <Content Include="assets_zine\material\mobile\bttnPrevPage.png" />
+    <Content Include="assets_zine\material\mobile\bttnPrint.png" />
+    <Content Include="assets_zine\material\mobile\bttnSinglePage.png" />
+    <Content Include="assets_zine\material\mobile\bttnThumbView.png" />
+    <Content Include="assets_zine\material\mobile\bttnZoomIn.png" />
+    <Content Include="assets_zine\material\mobile\bttnZoomOut.png" />
+    <Content Include="assets_zine\mobile\bttnBookView.png" />
+    <Content Include="assets_zine\mobile\bttnFind.png" />
+    <Content Include="assets_zine\mobile\bttnFullScreen.png" />
+    <Content Include="assets_zine\mobile\bttnPrevNext.png" />
+    <Content Include="assets_zine\mobile\bttnPrevPage.png" />
+    <Content Include="assets_zine\mobile\bttnPrint.png" />
+    <Content Include="assets_zine\mobile\bttnSinglePage.png" />
+    <Content Include="assets_zine\mobile\bttnThumbView.png" />
+    <Content Include="assets_zine\mobile\bttnZoomIn.png" />
+    <Content Include="assets_zine\mobile\bttnZoomOut.png" />
+    <Content Include="assets_zine\myCustomButton.png" />
+    <Content Include="assets_zine\myCustomButton2.png" />
+    <Content Include="assets_zine\skins\black_wood.jpg" />
+    <Content Include="assets_zine\skins\light_wood.png" />
+    <Content Include="change_config.aspx" />
+    <Content Include="checkdirpermissions.aspx" />
+    <Content Include="config\config.template.xml" />
+    <Content Include="config\config.xml" />
+    <Content Include="css\flexpaper.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="FlexPaperViewer.swf" />
+    <Content Include="js\expressInstall.swf" />
+    <Content Include="js\flexpaper.js" />
+    <Content Include="js\FlexPaperViewer.js" />
+    <Content Include="js\flexpaper_handlers.js" />
+    <Content Include="js\flexpaper_handlers_debug.js" />
+    <Content Include="js\jquery.extensions.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\pdf.min.js" />
+    <Content Include="js\pdf.worker.min.js" />
+    <Content Include="locale\bg_BG\FlexPaper.txt" />
+    <Content Include="locale\cz_CS\FlexPaper.txt" />
+    <Content Include="locale\de_DE\FlexPaper.txt" />
+    <Content Include="locale\dn_DN\FlexPaper.txt" />
+    <Content Include="locale\el_EL\FlexPaper.txt" />
+    <Content Include="locale\en_US\FlexPaper.txt" />
+    <Content Include="locale\es_ES\FlexPaper.txt" />
+    <Content Include="locale\fi_FN\FlexPaper.txt" />
+    <Content Include="locale\fr_FR\FlexPaper.txt" />
+    <Content Include="locale\he_IL\FlexPaper.txt" />
+    <Content Include="locale\hu_HU\FlexPaper.txt" />
+    <Content Include="locale\it_IT\FlexPaper.txt" />
+    <Content Include="locale\lt_LT\FlexPaper.txt" />
+    <Content Include="locale\nl_NL\FlexPaper.txt" />
+    <Content Include="locale\pl_PL\FlexPaper.txt" />
+    <Content Include="locale\pt_BR\FlexPaper.txt" />
+    <Content Include="locale\pt_PT\FlexPaper.txt" />
+    <Content Include="locale\pv_FN\FlexPaper.txt" />
+    <Content Include="locale\ru_RU\FlexPaper.txt" />
+    <Content Include="locale\se_SE\FlexPaper.txt" />
+    <Content Include="locale\tr_TR\FlexPaper.txt" />
+    <Content Include="locale\zh_CN\FlexPaper.txt" />
+    <Content Include="locale\zh_TW\FlexPaper.txt" />
+    <Content Include="setup.aspx" />
+    <Content Include="simple_document.aspx" />
+    <Content Include="simple_document_htmlui.aspx" />
+    <Content Include="split_document.aspx" />
+    <Content Include="split_document_htmlui.aspx" />
+    <Content Include="systemcheck.aspx" />
+    <Content Include="UI_Zine.xml" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Codem\Common.cs" />
+    <Compile Include="Codem\Config.cs" />
+    <Compile Include="Codem\DBHelper.cs" />
+    <Compile Include="Codem\DocService.cs" />
+    <Compile Include="Codem\mudraw.cs" />
+    <Compile Include="Codem\pdf2json.cs" />
+    <Compile Include="Codem\pdf2swf.cs" />
+    <Compile Include="Codem\splitpdf.cs" />
+    <Compile Include="Codem\swfextract.cs" />
+    <Compile Include="Codem\swfrender.cs" />
+    <Compile Include="Codem\swfsize.cs" />
+    <Compile Include="change_config.aspx.cs">
+      <DependentUpon>change_config.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="checkdirpermissions.aspx.cs">
+      <DependentUpon>checkdirpermissions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="flexpaper.master.cs">
+      <DependentUpon>flexpaper.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="setup.aspx.cs">
+      <DependentUpon>setup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="simple_document.aspx.cs">
+      <DependentUpon>simple_document.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="simple_document_htmlui.aspx.cs">
+      <DependentUpon>simple_document_htmlui.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="split_document.aspx.cs">
+      <DependentUpon>split_document.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="split_document_htmlui.aspx.cs">
+      <DependentUpon>split_document_htmlui.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="flexpaper.master" />
+    <Content Include="admin_files\controls\uploadify.ashx" />
+    <Content Include="config\Web.config" />
+    <Content Include="locale\ja_JP\FlexPaper.properties" />
+    <Content Include="locale\ko_KR\FlexPaper.properties" />
+    <Content Include="pdf\Paper.pdf" />
+    <Content Include="services\containstext.ashx" />
+    <Content Include="services\numpages.ashx" />
+    <Content Include="services\swfsize.ashx" />
+    <Content Include="services\view.ashx" />
+    <None Include="Properties\PublishProfiles\Flexp.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="docs\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51047/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

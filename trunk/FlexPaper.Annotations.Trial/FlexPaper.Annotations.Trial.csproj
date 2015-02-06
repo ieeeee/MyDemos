@@ -1,0 +1,1035 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EACE5678-62B4-4AA2-8BD0-E337B546C267}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FlexPaper.Annotations.Trials</RootNamespace>
+    <AssemblyName>FlexPaper.Annotations.Trial</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="aspnet\admin_files\controls\uploadify.swf" />
+    <Content Include="aspnet\admin_files\css\install.css" />
+    <Content Include="aspnet\admin_files\css\prettify.css" />
+    <Content Include="aspnet\admin_files\images\bg_button_.png" />
+    <Content Include="aspnet\admin_files\images\bg_head.png" />
+    <Content Include="aspnet\admin_files\images\bg_process_active.gif" />
+    <Content Include="aspnet\admin_files\images\bg_process_complete.gif" />
+    <Content Include="aspnet\admin_files\images\bg_process_default.gif" />
+    <Content Include="aspnet\admin_files\images\bg_process_prevactive.gif" />
+    <Content Include="aspnet\admin_files\images\button_hdr_docs.png" />
+    <Content Include="aspnet\admin_files\images\button_hdr_home.png" />
+    <Content Include="aspnet\admin_files\images\cancel.png" />
+    <Content Include="aspnet\admin_files\images\config.ini.win.aspx.png" />
+    <Content Include="aspnet\admin_files\images\config.ini.win.php.png" />
+    <Content Include="aspnet\admin_files\images\config.ini.win.php.windows2003.png" />
+    <Content Include="aspnet\admin_files\images\delete.png" />
+    <Content Include="aspnet\admin_files\images\flexpaper_logo.png" />
+    <Content Include="aspnet\admin_files\images\footer_logo.gif" />
+    <Content Include="aspnet\admin_files\images\icon_check_process_12px.gif" />
+    <Content Include="aspnet\admin_files\images\icon_warn.png" />
+    <Content Include="aspnet\admin_files\images\info_icon.png" />
+    <Content Include="aspnet\admin_files\images\paper_lock.png" />
+    <Content Include="aspnet\admin_files\images\reload.png" />
+    <Content Include="aspnet\admin_files\images\std_btn_24_blue.png" />
+    <Content Include="aspnet\admin_files\images\upload.png" />
+    <Content Include="aspnet\admin_files\js\jquery.min.js" />
+    <Content Include="aspnet\admin_files\js\jquery.uploadify.min.js" />
+    <Content Include="aspnet\admin_files\js\pagination.js" />
+    <Content Include="aspnet\admin_files\js\prettify.js" />
+    <Content Include="aspnet\admin_files\js\swfobject.js" />
+    <Content Include="aspnet\annotations_handlers.ascx" />
+    <Content Include="aspnet\App_Data\flexpaper.mdf" />
+    <Content Include="aspnet\App_Data\flexpaper.template_log.ldf" />
+    <Content Include="aspnet\App_Data\flexpaper_log.LDF">
+      <DependentUpon>flexpaper.mdf</DependentUpon>
+    </Content>
+    <Content Include="aspnet\change_config.aspx" />
+    <Content Include="aspnet\checkdatabaseconnectivity.aspx" />
+    <Content Include="aspnet\checkdirpermissions.aspx" />
+    <Content Include="aspnet\config\config.template.xml" />
+    <Content Include="aspnet\config\config.xml" />
+    <Content Include="aspnet\css\flexpaper.css" />
+    <Content Include="aspnet\css\flexpaper_flat.css" />
+    <Content Include="aspnet\Default.aspx" />
+    <Content Include="aspnet\FlexPaperViewer.swf" />
+    <Content Include="aspnet\images\annotations\bubble.png" />
+    <Content Include="aspnet\images\annotations\bubble14.png" />
+    <Content Include="aspnet\images\annotations\bubble14g.png" />
+    <Content Include="aspnet\images\annotations\bubble14i.png" />
+    <Content Include="aspnet\images\annotations\bubble20.png" />
+    <Content Include="aspnet\images\annotations\delete-icon.gif" />
+    <Content Include="aspnet\images\annotations\deleteIcon.gif" />
+    <Content Include="aspnet\images\annotations\deleteIcon.png" />
+    <Content Include="aspnet\images\annotations\draw-cursor.gif" />
+    <Content Include="aspnet\images\annotations\draw.cur" />
+    <Content Include="aspnet\images\annotations\draw.gif" />
+    <Content Include="aspnet\images\annotations\drawIcon.png" />
+    <Content Include="aspnet\images\annotations\draw_line.png" />
+    <Content Include="aspnet\images\annotations\hand_select.gif" />
+    <Content Include="aspnet\images\annotations\icon-eye-gray.gif" />
+    <Content Include="aspnet\images\annotations\icon-eye-gray.png" />
+    <Content Include="aspnet\images\annotations\icon_freehand.png" />
+    <Content Include="aspnet\images\annotations\icon_note.gif" />
+    <Content Include="aspnet\images\annotations\icon_note.png" />
+    <Content Include="aspnet\images\annotations\icon_note_c_f.png" />
+    <Content Include="aspnet\images\annotations\icon_note_c_f_old.gif" />
+    <Content Include="aspnet\images\annotations\icon_note_c_old.gif" />
+    <Content Include="aspnet\images\annotations\icon_note_point.png" />
+    <Content Include="aspnet\images\annotations\icon_rectangle.png" />
+    <Content Include="aspnet\images\annotations\icon_rectangle_filled.png" />
+    <Content Include="aspnet\images\annotations\icon_reply.png" />
+    <Content Include="aspnet\images\annotations\icon_select_area.gif" />
+    <Content Include="aspnet\images\annotations\icon_select_text.gif" />
+    <Content Include="aspnet\images\annotations\icon_select_text.png" />
+    <Content Include="aspnet\images\annotations\icon_strikeout.gif" />
+    <Content Include="aspnet\images\annotations\icon_strikeout.png" />
+    <Content Include="aspnet\images\annotations\marker.cur" />
+    <Content Include="aspnet\images\annotations\marker_big.png" />
+    <Content Include="aspnet\images\annotations\marker_small.png" />
+    <Content Include="aspnet\images\annotations\note.cur" />
+    <Content Include="aspnet\images\annotations\pencil.gif" />
+    <Content Include="aspnet\images\annotations\pencil.png" />
+    <Content Include="aspnet\images\annotations\strikeout_cursor.gif" />
+    <Content Include="aspnet\images\annotations\tick-icon-white.gif" />
+    <Content Include="aspnet\images\annotations\tick-icon.gif" />
+    <Content Include="aspnet\images\annotations\touch\bubble.png" />
+    <Content Include="aspnet\images\annotations\touch\bubble14.png" />
+    <Content Include="aspnet\images\annotations\touch\bubble14g.png" />
+    <Content Include="aspnet\images\annotations\touch\bubble14i.png" />
+    <Content Include="aspnet\images\annotations\touch\bubble20.png" />
+    <Content Include="aspnet\images\annotations\touch\delete-icon.gif" />
+    <Content Include="aspnet\images\annotations\touch\deleteIcon.png" />
+    <Content Include="aspnet\images\annotations\touch\draw-cursor.gif" />
+    <Content Include="aspnet\images\annotations\touch\draw.gif" />
+    <Content Include="aspnet\images\annotations\touch\hand_select.gif" />
+    <Content Include="aspnet\images\annotations\touch\icon-eye-gray2.png" />
+    <Content Include="aspnet\images\annotations\touch\icon_note.gif" />
+    <Content Include="aspnet\images\annotations\touch\icon_note_c_f.png" />
+    <Content Include="aspnet\images\annotations\touch\icon_note_c_f_old.gif" />
+    <Content Include="aspnet\images\annotations\touch\icon_note_c_old.gif" />
+    <Content Include="aspnet\images\annotations\touch\icon_strikeout.gif" />
+    <Content Include="aspnet\images\annotations\touch\icon_strikeout.png" />
+    <Content Include="aspnet\images\annotations\touch\leftarrow_big.gif" />
+    <Content Include="aspnet\images\annotations\touch\lock.png" />
+    <Content Include="aspnet\images\annotations\touch\lockloading.png" />
+    <Content Include="aspnet\images\annotations\touch\pencil_big.gif" />
+    <Content Include="aspnet\images\annotations\touch\rightarrow_big.gif" />
+    <Content Include="aspnet\images\annotations\touch\searchglass_big.png" />
+    <Content Include="aspnet\images\annotations\touch\separator_big.gif" />
+    <Content Include="aspnet\images\annotations\touch\strikeout_cursor.gif" />
+    <Content Include="aspnet\images\annotations\touch\tick-icon-white.gif" />
+    <Content Include="aspnet\images\annotations\touch\tick-icon.gif" />
+    <Content Include="aspnet\images\bar.gif" />
+    <Content Include="aspnet\images\blank.gif" />
+    <Content Include="aspnet\images\find.gif" />
+    <Content Include="aspnet\images\fit.gif" />
+    <Content Include="aspnet\images\flat\bar.png" />
+    <Content Include="aspnet\images\flat\document.png" />
+    <Content Include="aspnet\images\flat\find.png" />
+    <Content Include="aspnet\images\flat\fit.png" />
+    <Content Include="aspnet\images\flat\flip.gif" />
+    <Content Include="aspnet\images\flat\flip.png" />
+    <Content Include="aspnet\images\flat\fullscreen.png" />
+    <Content Include="aspnet\images\flat\hand.png" />
+    <Content Include="aspnet\images\flat\icon-arrow-left.png" />
+    <Content Include="aspnet\images\flat\icon-arrow-right.png" />
+    <Content Include="aspnet\images\flat\pagefit.png" />
+    <Content Include="aspnet\images\flat\printer.png" />
+    <Content Include="aspnet\images\flat\textselect.png" />
+    <Content Include="aspnet\images\flat\thumbs.png" />
+    <Content Include="aspnet\images\flat\touch\document.png" />
+    <Content Include="aspnet\images\flat\touch\fullscreen.png" />
+    <Content Include="aspnet\images\flat\touch\next.png" />
+    <Content Include="aspnet\images\flat\touch\prev.png" />
+    <Content Include="aspnet\images\flat\touch\print.png" />
+    <Content Include="aspnet\images\flat\touch\search.png" />
+    <Content Include="aspnet\images\flat\touch\thumbs.png" />
+    <Content Include="aspnet\images\flat\touch\twodocuments.png" />
+    <Content Include="aspnet\images\flat\touch\zoomin.png" />
+    <Content Include="aspnet\images\flat\touch\zoomout.png" />
+    <Content Include="aspnet\images\flat\twodocuments.png" />
+    <Content Include="aspnet\images\flip.gif" />
+    <Content Include="aspnet\images\fullscreen.gif" />
+    <Content Include="aspnet\images\grab.gif" />
+    <Content Include="aspnet\images\grabbing.gif" />
+    <Content Include="aspnet\images\hand2.gif" />
+    <Content Include="aspnet\images\icon-arrow-left.gif" />
+    <Content Include="aspnet\images\icon-arrow-right.gif" />
+    <Content Include="aspnet\images\ipad-copy.png" />
+    <Content Include="aspnet\images\loader.gif" />
+    <Content Include="aspnet\images\logosmall-trans.png" />
+    <Content Include="aspnet\images\logosmall-transc.png" />
+    <Content Include="aspnet\images\logosmall.png" />
+    <Content Include="aspnet\images\logosmallgray.png" />
+    <Content Include="aspnet\images\pagefit.gif" />
+    <Content Include="aspnet\images\print-icon.gif" />
+    <Content Include="aspnet\images\singlepage.gif" />
+    <Content Include="aspnet\images\sliderbg.gif" />
+    <Content Include="aspnet\images\sliderdot.gif" />
+    <Content Include="aspnet\images\textselect.gif" />
+    <Content Include="aspnet\images\textselectcursor.gif" />
+    <Content Include="aspnet\images\textshifted_fixed.pdf.js" />
+    <Content Include="aspnet\images\thumbs.gif" />
+    <Content Include="aspnet\images\toolbarbg.gif" />
+    <Content Include="aspnet\images\touch\bg.png" />
+    <Content Include="aspnet\images\touch\document.png" />
+    <Content Include="aspnet\images\touch\document3.png" />
+    <Content Include="aspnet\images\touch\fitheight.png" />
+    <Content Include="aspnet\images\touch\fitheight3.png" />
+    <Content Include="aspnet\images\touch\fitwidth.png" />
+    <Content Include="aspnet\images\touch\fitwidth3.png" />
+    <Content Include="aspnet\images\touch\fullscreen.png" />
+    <Content Include="aspnet\images\touch\fullscreen3.png" />
+    <Content Include="aspnet\images\touch\magnifier.png" />
+    <Content Include="aspnet\images\touch\next.png" />
+    <Content Include="aspnet\images\touch\next3.png" />
+    <Content Include="aspnet\images\touch\prev.png" />
+    <Content Include="aspnet\images\touch\prev3.png" />
+    <Content Include="aspnet\images\touch\print.png" />
+    <Content Include="aspnet\images\touch\print3.png" />
+    <Content Include="aspnet\images\touch\search.png" />
+    <Content Include="aspnet\images\touch\search2.png" />
+    <Content Include="aspnet\images\touch\selection_icon.png" />
+    <Content Include="aspnet\images\touch\thumbs.png" />
+    <Content Include="aspnet\images\touch\thumbs3.png" />
+    <Content Include="aspnet\images\touch\twodocuments.png" />
+    <Content Include="aspnet\images\touch\twodocuments3.png" />
+    <Content Include="aspnet\images\touch\zoomin.png" />
+    <Content Include="aspnet\images\touch\zoomout.png" />
+    <Content Include="aspnet\images\twopage.gif" />
+    <Content Include="aspnet\images\zine\bar.gif" />
+    <Content Include="aspnet\images\zine\blank.gif" />
+    <Content Include="aspnet\images\zine\cursor-hand.png" />
+    <Content Include="aspnet\images\zine\cursor-zoom.png" />
+    <Content Include="aspnet\images\zine\document.png" />
+    <Content Include="aspnet\images\zine\document2.png" />
+    <Content Include="aspnet\images\zine\find.gif" />
+    <Content Include="aspnet\images\zine\fit.gif" />
+    <Content Include="aspnet\images\zine\flip.gif" />
+    <Content Include="aspnet\images\zine\grab.gif" />
+    <Content Include="aspnet\images\zine\grabbing.gif" />
+    <Content Include="aspnet\images\zine\hand.png" />
+    <Content Include="aspnet\images\zine\hand2.gif" />
+    <Content Include="aspnet\images\zine\hand3.png" />
+    <Content Include="aspnet\images\zine\icon-arrow-left.gif" />
+    <Content Include="aspnet\images\zine\icon-arrow-right.gif" />
+    <Content Include="aspnet\images\zine\logosmall-trans.png" />
+    <Content Include="aspnet\images\zine\logosmall-transc.png" />
+    <Content Include="aspnet\images\zine\logosmall.png" />
+    <Content Include="aspnet\images\zine\logosmallgray.png" />
+    <Content Include="aspnet\images\zine\magnifying-glass.png" />
+    <Content Include="aspnet\images\zine\pagefit.gif" />
+    <Content Include="aspnet\images\zine\pixel.gif" />
+    <Content Include="aspnet\images\zine\printer.png" />
+    <Content Include="aspnet\images\zine\screen.png" />
+    <Content Include="aspnet\images\zine\sliderdot.png" />
+    <Content Include="aspnet\images\zine\textselect.gif" />
+    <Content Include="aspnet\images\zine\textselectcursor.gif" />
+    <Content Include="aspnet\images\zine\thumbs.gif" />
+    <Content Include="aspnet\images\zine\touch\background.png" />
+    <Content Include="aspnet\images\zine\touch\document.png" />
+    <Content Include="aspnet\images\zine\touch\document_pressed.png" />
+    <Content Include="aspnet\images\zine\touch\fullscreen.png" />
+    <Content Include="aspnet\images\zine\touch\fullscreen_pressed.png" />
+    <Content Include="aspnet\images\zine\touch\next.png" />
+    <Content Include="aspnet\images\zine\touch\next_pressed.png" />
+    <Content Include="aspnet\images\zine\touch\previous.png" />
+    <Content Include="aspnet\images\zine\touch\previous_pressed.png" />
+    <Content Include="aspnet\images\zine\touch\print.png" />
+    <Content Include="aspnet\images\zine\touch\print_pressed.png" />
+    <Content Include="aspnet\images\zine\touch\search.png" />
+    <Content Include="aspnet\images\zine\touch\search_pressed.png" />
+    <Content Include="aspnet\images\zine\touch\selected.png" />
+    <Content Include="aspnet\images\zine\touch\thumbs.png" />
+    <Content Include="aspnet\images\zine\touch\thumbs_pressed.png" />
+    <Content Include="aspnet\images\zine\touch\twodocuments.png" />
+    <Content Include="aspnet\images\zine\touch\twodocuments_pressed.png" />
+    <Content Include="aspnet\images\zine\touch\zoomin.png" />
+    <Content Include="aspnet\images\zine\touch\zoomin_pressed.png" />
+    <Content Include="aspnet\images\zine\touch\zoomout.png" />
+    <Content Include="aspnet\images\zine\touch\zoomout_pressed.png" />
+    <Content Include="aspnet\images\zine\twodocuments.png" />
+    <Content Include="aspnet\images\zine\twodocuments2.png" />
+    <Content Include="aspnet\images\zine\twodocuments_disabled.png" />
+    <Content Include="aspnet\js\expressInstall.swf" />
+    <Content Include="aspnet\js\flexpaper.js" />
+    <Content Include="aspnet\js\FlexPaperViewer.js" />
+    <Content Include="aspnet\js\flexpaper_flashhandlers_htmlui.js" />
+    <Content Include="aspnet\js\flexpaper_handlers.js" />
+    <Content Include="aspnet\js\flexpaper_handlers_debug.js" />
+    <Content Include="aspnet\js\jquery.extensions.min.js" />
+    <Content Include="aspnet\js\jquery.min.js" />
+    <Content Include="aspnet\js\pdf.min.js" />
+    <Content Include="aspnet\js\pdf.worker.min.js" />
+    <Content Include="aspnet\locale\bg_BG\FlexPaper.txt" />
+    <Content Include="aspnet\locale\cz_CS\FlexPaper.txt" />
+    <Content Include="aspnet\locale\de_DE\FlexPaper.txt" />
+    <Content Include="aspnet\locale\dn_DN\FlexPaper.txt" />
+    <Content Include="aspnet\locale\el_EL\FlexPaper.txt" />
+    <Content Include="aspnet\locale\en_US\FlexPaper.txt" />
+    <Content Include="aspnet\locale\es_ES\FlexPaper.txt" />
+    <Content Include="aspnet\locale\fi_FN\FlexPaper.txt" />
+    <Content Include="aspnet\locale\fr_FR\FlexPaper.txt" />
+    <Content Include="aspnet\locale\he_IL\FlexPaper.txt" />
+    <Content Include="aspnet\locale\hu_HU\FlexPaper.txt" />
+    <Content Include="aspnet\locale\it_IT\FlexPaper.txt" />
+    <Content Include="aspnet\locale\lt_LT\FlexPaper.txt" />
+    <Content Include="aspnet\locale\nl_NL\FlexPaper.txt" />
+    <Content Include="aspnet\locale\pl_PL\FlexPaper.txt" />
+    <Content Include="aspnet\locale\pt_BR\FlexPaper.txt" />
+    <Content Include="aspnet\locale\pt_PT\FlexPaper.txt" />
+    <Content Include="aspnet\locale\pv_FN\FlexPaper.txt" />
+    <Content Include="aspnet\locale\ru_RU\FlexPaper.txt" />
+    <Content Include="aspnet\locale\se_SE\FlexPaper.txt" />
+    <Content Include="aspnet\locale\tr_TR\FlexPaper.txt" />
+    <Content Include="aspnet\locale\zh_CN\FlexPaper.txt" />
+    <Content Include="aspnet\locale\zh_TW\FlexPaper.txt" />
+    <Content Include="aspnet\setup.aspx" />
+    <Content Include="aspnet\simple_document.aspx" />
+    <Content Include="aspnet\split_document.aspx" />
+    <Content Include="aspnet\systemcheck.aspx" />
+    <Content Include="aspnet\UI_flexpaper_annotations.html" />
+    <Content Include="aspnet\UI_flexpaper_desktop.html" />
+    <Content Include="aspnet\UI_flexpaper_desktop_flat.html" />
+    <Content Include="aspnet\UI_flexpaper_mobile.html" />
+    <Content Include="Changelog.txt" />
+    <Content Include="css\flexpaper.css" />
+    <Content Include="css\flexpaper_flat.css" />
+    <Content Include="docs\Paper.js" />
+    <Content Include="docs\Paper.pdf.swf" />
+    <Content Include="docs\Paper.pdf_1.png" />
+    <Content Include="docs\Paper.pdf_10.png" />
+    <Content Include="docs\Paper.pdf_11.png" />
+    <Content Include="docs\Paper.pdf_12.png" />
+    <Content Include="docs\Paper.pdf_13.png" />
+    <Content Include="docs\Paper.pdf_14.png" />
+    <Content Include="docs\Paper.pdf_15.png" />
+    <Content Include="docs\Paper.pdf_16.png" />
+    <Content Include="docs\Paper.pdf_17.png" />
+    <Content Include="docs\Paper.pdf_18.png" />
+    <Content Include="docs\Paper.pdf_19.png" />
+    <Content Include="docs\Paper.pdf_2.png" />
+    <Content Include="docs\Paper.pdf_20.png" />
+    <Content Include="docs\Paper.pdf_21.png" />
+    <Content Include="docs\Paper.pdf_22.png" />
+    <Content Include="docs\Paper.pdf_23.png" />
+    <Content Include="docs\Paper.pdf_24.png" />
+    <Content Include="docs\Paper.pdf_25.png" />
+    <Content Include="docs\Paper.pdf_26.png" />
+    <Content Include="docs\Paper.pdf_27.png" />
+    <Content Include="docs\Paper.pdf_28.png" />
+    <Content Include="docs\Paper.pdf_3.png" />
+    <Content Include="docs\Paper.pdf_4.png" />
+    <Content Include="docs\Paper.pdf_5.png" />
+    <Content Include="docs\Paper.pdf_6.png" />
+    <Content Include="docs\Paper.pdf_7.png" />
+    <Content Include="docs\Paper.pdf_8.png" />
+    <Content Include="docs\Paper.pdf_9.png" />
+    <Content Include="FlexPaperViewer.swf" />
+    <Content Include="images\annotations\bubble.png" />
+    <Content Include="images\annotations\bubble14.png" />
+    <Content Include="images\annotations\bubble14g.png" />
+    <Content Include="images\annotations\bubble14i.png" />
+    <Content Include="images\annotations\bubble20.png" />
+    <Content Include="images\annotations\delete-icon.gif" />
+    <Content Include="images\annotations\deleteIcon.gif" />
+    <Content Include="images\annotations\deleteIcon.png" />
+    <Content Include="images\annotations\draw-cursor.gif" />
+    <Content Include="images\annotations\draw.cur" />
+    <Content Include="images\annotations\draw.gif" />
+    <Content Include="images\annotations\drawIcon.png" />
+    <Content Include="images\annotations\draw_line.png" />
+    <Content Include="images\annotations\hand_select.gif" />
+    <Content Include="images\annotations\icon-eye-gray.gif" />
+    <Content Include="images\annotations\icon-eye-gray.png" />
+    <Content Include="images\annotations\icon_freehand.png" />
+    <Content Include="images\annotations\icon_note.gif" />
+    <Content Include="images\annotations\icon_note.png" />
+    <Content Include="images\annotations\icon_note_c_f.png" />
+    <Content Include="images\annotations\icon_note_c_f_old.gif" />
+    <Content Include="images\annotations\icon_note_c_old.gif" />
+    <Content Include="images\annotations\icon_note_point.png" />
+    <Content Include="images\annotations\icon_rectangle.png" />
+    <Content Include="images\annotations\icon_rectangle_filled.png" />
+    <Content Include="images\annotations\icon_reply.png" />
+    <Content Include="images\annotations\icon_select_area.gif" />
+    <Content Include="images\annotations\icon_select_text.gif" />
+    <Content Include="images\annotations\icon_select_text.png" />
+    <Content Include="images\annotations\icon_strikeout.gif" />
+    <Content Include="images\annotations\icon_strikeout.png" />
+    <Content Include="images\annotations\marker.cur" />
+    <Content Include="images\annotations\marker_big.png" />
+    <Content Include="images\annotations\marker_small.png" />
+    <Content Include="images\annotations\note.cur" />
+    <Content Include="images\annotations\pencil.gif" />
+    <Content Include="images\annotations\pencil.png" />
+    <Content Include="images\annotations\strikeout_cursor.gif" />
+    <Content Include="images\annotations\tick-icon-white.gif" />
+    <Content Include="images\annotations\tick-icon.gif" />
+    <Content Include="images\annotations\touch\bubble.png" />
+    <Content Include="images\annotations\touch\bubble14.png" />
+    <Content Include="images\annotations\touch\bubble14g.png" />
+    <Content Include="images\annotations\touch\bubble14i.png" />
+    <Content Include="images\annotations\touch\bubble20.png" />
+    <Content Include="images\annotations\touch\delete-icon.gif" />
+    <Content Include="images\annotations\touch\deleteIcon.png" />
+    <Content Include="images\annotations\touch\draw-cursor.gif" />
+    <Content Include="images\annotations\touch\draw.gif" />
+    <Content Include="images\annotations\touch\hand_select.gif" />
+    <Content Include="images\annotations\touch\icon-eye-gray2.png" />
+    <Content Include="images\annotations\touch\icon_note.gif" />
+    <Content Include="images\annotations\touch\icon_note_c_f.png" />
+    <Content Include="images\annotations\touch\icon_note_c_f_old.gif" />
+    <Content Include="images\annotations\touch\icon_note_c_old.gif" />
+    <Content Include="images\annotations\touch\icon_strikeout.gif" />
+    <Content Include="images\annotations\touch\icon_strikeout.png" />
+    <Content Include="images\annotations\touch\leftarrow_big.gif" />
+    <Content Include="images\annotations\touch\lock.png" />
+    <Content Include="images\annotations\touch\lockloading.png" />
+    <Content Include="images\annotations\touch\pencil_big.gif" />
+    <Content Include="images\annotations\touch\rightarrow_big.gif" />
+    <Content Include="images\annotations\touch\searchglass_big.png" />
+    <Content Include="images\annotations\touch\separator_big.gif" />
+    <Content Include="images\annotations\touch\strikeout_cursor.gif" />
+    <Content Include="images\annotations\touch\tick-icon-white.gif" />
+    <Content Include="images\annotations\touch\tick-icon.gif" />
+    <Content Include="images\bar.gif" />
+    <Content Include="images\blank.gif" />
+    <Content Include="images\find.gif" />
+    <Content Include="images\fit.gif" />
+    <Content Include="images\flat\bar.png" />
+    <Content Include="images\flat\document.png" />
+    <Content Include="images\flat\find.png" />
+    <Content Include="images\flat\fit.png" />
+    <Content Include="images\flat\flip.gif" />
+    <Content Include="images\flat\flip.png" />
+    <Content Include="images\flat\fullscreen.png" />
+    <Content Include="images\flat\hand.png" />
+    <Content Include="images\flat\icon-arrow-left.png" />
+    <Content Include="images\flat\icon-arrow-right.png" />
+    <Content Include="images\flat\pagefit.png" />
+    <Content Include="images\flat\printer.png" />
+    <Content Include="images\flat\textselect.png" />
+    <Content Include="images\flat\thumbs.png" />
+    <Content Include="images\flat\touch\document.png" />
+    <Content Include="images\flat\touch\fullscreen.png" />
+    <Content Include="images\flat\touch\next.png" />
+    <Content Include="images\flat\touch\prev.png" />
+    <Content Include="images\flat\touch\print.png" />
+    <Content Include="images\flat\touch\search.png" />
+    <Content Include="images\flat\touch\thumbs.png" />
+    <Content Include="images\flat\touch\twodocuments.png" />
+    <Content Include="images\flat\touch\zoomin.png" />
+    <Content Include="images\flat\touch\zoomout.png" />
+    <Content Include="images\flat\twodocuments.png" />
+    <Content Include="images\flip.gif" />
+    <Content Include="images\fullscreen.gif" />
+    <Content Include="images\grab.gif" />
+    <Content Include="images\grabbing.gif" />
+    <Content Include="images\hand2.gif" />
+    <Content Include="images\icon-arrow-left.gif" />
+    <Content Include="images\icon-arrow-right.gif" />
+    <Content Include="images\ipad-copy.png" />
+    <Content Include="images\loader.gif" />
+    <Content Include="images\logosmall-trans.png" />
+    <Content Include="images\logosmall-transc.png" />
+    <Content Include="images\logosmall.png" />
+    <Content Include="images\logosmallgray.png" />
+    <Content Include="images\pagefit.gif" />
+    <Content Include="images\print-icon.gif" />
+    <Content Include="images\singlepage.gif" />
+    <Content Include="images\sliderbg.gif" />
+    <Content Include="images\sliderdot.gif" />
+    <Content Include="images\textselect.gif" />
+    <Content Include="images\textselectcursor.gif" />
+    <Content Include="images\textshifted_fixed.pdf.js" />
+    <Content Include="images\thumbs.gif" />
+    <Content Include="images\toolbarbg.gif" />
+    <Content Include="images\touch\bg.png" />
+    <Content Include="images\touch\document.png" />
+    <Content Include="images\touch\document3.png" />
+    <Content Include="images\touch\fitheight.png" />
+    <Content Include="images\touch\fitheight3.png" />
+    <Content Include="images\touch\fitwidth.png" />
+    <Content Include="images\touch\fitwidth3.png" />
+    <Content Include="images\touch\fullscreen.png" />
+    <Content Include="images\touch\fullscreen3.png" />
+    <Content Include="images\touch\magnifier.png" />
+    <Content Include="images\touch\next.png" />
+    <Content Include="images\touch\next3.png" />
+    <Content Include="images\touch\prev.png" />
+    <Content Include="images\touch\prev3.png" />
+    <Content Include="images\touch\print.png" />
+    <Content Include="images\touch\print3.png" />
+    <Content Include="images\touch\search.png" />
+    <Content Include="images\touch\search2.png" />
+    <Content Include="images\touch\selection_icon.png" />
+    <Content Include="images\touch\thumbs.png" />
+    <Content Include="images\touch\thumbs3.png" />
+    <Content Include="images\touch\twodocuments.png" />
+    <Content Include="images\touch\twodocuments3.png" />
+    <Content Include="images\touch\zoomin.png" />
+    <Content Include="images\touch\zoomout.png" />
+    <Content Include="images\twopage.gif" />
+    <Content Include="images\zine\bar.gif" />
+    <Content Include="images\zine\blank.gif" />
+    <Content Include="images\zine\cursor-hand.png" />
+    <Content Include="images\zine\cursor-zoom.png" />
+    <Content Include="images\zine\document.png" />
+    <Content Include="images\zine\document2.png" />
+    <Content Include="images\zine\find.gif" />
+    <Content Include="images\zine\fit.gif" />
+    <Content Include="images\zine\flip.gif" />
+    <Content Include="images\zine\grab.gif" />
+    <Content Include="images\zine\grabbing.gif" />
+    <Content Include="images\zine\hand.png" />
+    <Content Include="images\zine\hand2.gif" />
+    <Content Include="images\zine\hand3.png" />
+    <Content Include="images\zine\icon-arrow-left.gif" />
+    <Content Include="images\zine\icon-arrow-right.gif" />
+    <Content Include="images\zine\logosmall-trans.png" />
+    <Content Include="images\zine\logosmall-transc.png" />
+    <Content Include="images\zine\logosmall.png" />
+    <Content Include="images\zine\logosmallgray.png" />
+    <Content Include="images\zine\magnifying-glass.png" />
+    <Content Include="images\zine\pagefit.gif" />
+    <Content Include="images\zine\pixel.gif" />
+    <Content Include="images\zine\printer.png" />
+    <Content Include="images\zine\screen.png" />
+    <Content Include="images\zine\sliderdot.png" />
+    <Content Include="images\zine\textselect.gif" />
+    <Content Include="images\zine\textselectcursor.gif" />
+    <Content Include="images\zine\thumbs.gif" />
+    <Content Include="images\zine\touch\background.png" />
+    <Content Include="images\zine\touch\document.png" />
+    <Content Include="images\zine\touch\document_pressed.png" />
+    <Content Include="images\zine\touch\fullscreen.png" />
+    <Content Include="images\zine\touch\fullscreen_pressed.png" />
+    <Content Include="images\zine\touch\next.png" />
+    <Content Include="images\zine\touch\next_pressed.png" />
+    <Content Include="images\zine\touch\previous.png" />
+    <Content Include="images\zine\touch\previous_pressed.png" />
+    <Content Include="images\zine\touch\print.png" />
+    <Content Include="images\zine\touch\print_pressed.png" />
+    <Content Include="images\zine\touch\search.png" />
+    <Content Include="images\zine\touch\search_pressed.png" />
+    <Content Include="images\zine\touch\selected.png" />
+    <Content Include="images\zine\touch\thumbs.png" />
+    <Content Include="images\zine\touch\thumbs_pressed.png" />
+    <Content Include="images\zine\touch\twodocuments.png" />
+    <Content Include="images\zine\touch\twodocuments_pressed.png" />
+    <Content Include="images\zine\touch\zoomin.png" />
+    <Content Include="images\zine\touch\zoomin_pressed.png" />
+    <Content Include="images\zine\touch\zoomout.png" />
+    <Content Include="images\zine\touch\zoomout_pressed.png" />
+    <Content Include="images\zine\twodocuments.png" />
+    <Content Include="images\zine\twodocuments2.png" />
+    <Content Include="images\zine\twodocuments_disabled.png" />
+    <Content Include="index.html" />
+    <Content Include="index_debug.html" />
+    <Content Include="index_flat.html" />
+    <Content Include="index_html4.html" />
+    <Content Include="index_html5.html" />
+    <Content Include="index_startatpage.html" />
+    <Content Include="index_twopage.html" />
+    <Content Include="js\expressInstall.swf" />
+    <Content Include="js\flexpaper.js" />
+    <Content Include="js\FlexPaperViewer.js" />
+    <Content Include="js\flexpaper_flashhandlers_htmlui.js" />
+    <Content Include="js\flexpaper_handlers.js" />
+    <Content Include="js\flexpaper_handlers_debug.js" />
+    <Content Include="js\jquery.extensions.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\pdf.min.js" />
+    <Content Include="js\pdf.worker.min.js" />
+    <Content Include="locale\bg_BG\FlexPaper.txt" />
+    <Content Include="locale\cz_CS\FlexPaper.txt" />
+    <Content Include="locale\de_DE\FlexPaper.txt" />
+    <Content Include="locale\dn_DN\FlexPaper.txt" />
+    <Content Include="locale\el_EL\FlexPaper.txt" />
+    <Content Include="locale\en_US\FlexPaper.txt" />
+    <Content Include="locale\es_ES\FlexPaper.txt" />
+    <Content Include="locale\fi_FN\FlexPaper.txt" />
+    <Content Include="locale\fr_FR\FlexPaper.txt" />
+    <Content Include="locale\he_IL\FlexPaper.txt" />
+    <Content Include="locale\hu_HU\FlexPaper.txt" />
+    <Content Include="locale\it_IT\FlexPaper.txt" />
+    <Content Include="locale\lt_LT\FlexPaper.txt" />
+    <Content Include="locale\nl_NL\FlexPaper.txt" />
+    <Content Include="locale\pl_PL\FlexPaper.txt" />
+    <Content Include="locale\pt_BR\FlexPaper.txt" />
+    <Content Include="locale\pt_PT\FlexPaper.txt" />
+    <Content Include="locale\pv_FN\FlexPaper.txt" />
+    <Content Include="locale\ru_RU\FlexPaper.txt" />
+    <Content Include="locale\se_SE\FlexPaper.txt" />
+    <Content Include="locale\tr_TR\FlexPaper.txt" />
+    <Content Include="locale\zh_CN\FlexPaper.txt" />
+    <Content Include="locale\zh_TW\FlexPaper.txt" />
+    <Content Include="php\admin_files\controls\uploadify.swf" />
+    <Content Include="php\admin_files\css\install.css" />
+    <Content Include="php\admin_files\css\prettify.css" />
+    <Content Include="php\admin_files\images\bg_button_.png" />
+    <Content Include="php\admin_files\images\bg_head.png" />
+    <Content Include="php\admin_files\images\bg_process_active.gif" />
+    <Content Include="php\admin_files\images\bg_process_complete.gif" />
+    <Content Include="php\admin_files\images\bg_process_default.gif" />
+    <Content Include="php\admin_files\images\bg_process_prevactive.gif" />
+    <Content Include="php\admin_files\images\button_hdr_docs.png" />
+    <Content Include="php\admin_files\images\button_hdr_home.png" />
+    <Content Include="php\admin_files\images\cancel.png" />
+    <Content Include="php\admin_files\images\config.ini.win.php.png" />
+    <Content Include="php\admin_files\images\config.ini.win.php.windows2003.png" />
+    <Content Include="php\admin_files\images\delete.png" />
+    <Content Include="php\admin_files\images\flexpaper_logo.png" />
+    <Content Include="php\admin_files\images\folder.png" />
+    <Content Include="php\admin_files\images\footer_logo.gif" />
+    <Content Include="php\admin_files\images\icon_check_process_12px.gif" />
+    <Content Include="php\admin_files\images\icon_warn.png" />
+    <Content Include="php\admin_files\images\info_icon.png" />
+    <Content Include="php\admin_files\images\paper_lock.png" />
+    <Content Include="php\admin_files\images\reload.png" />
+    <Content Include="php\admin_files\images\std_btn_24_blue.png" />
+    <Content Include="php\admin_files\images\upload.png" />
+    <Content Include="php\admin_files\js\jquery.min.js" />
+    <Content Include="php\admin_files\js\jquery.uploadify.min.js" />
+    <Content Include="php\admin_files\js\pagination.js" />
+    <Content Include="php\admin_files\js\prettify.js" />
+    <Content Include="php\admin_files\js\swfobject.js" />
+    <Content Include="php\admin_files\uploadify.swf" />
+    <Content Include="php\css\flexpaper.css" />
+    <Content Include="php\css\flexpaper_flat.css" />
+    <Content Include="php\FlexPaperViewer.swf" />
+    <Content Include="php\images\annotations\bubble.png" />
+    <Content Include="php\images\annotations\bubble14.png" />
+    <Content Include="php\images\annotations\bubble14g.png" />
+    <Content Include="php\images\annotations\bubble14i.png" />
+    <Content Include="php\images\annotations\bubble20.png" />
+    <Content Include="php\images\annotations\delete-icon.gif" />
+    <Content Include="php\images\annotations\deleteIcon.gif" />
+    <Content Include="php\images\annotations\deleteIcon.png" />
+    <Content Include="php\images\annotations\draw-cursor.gif" />
+    <Content Include="php\images\annotations\draw.cur" />
+    <Content Include="php\images\annotations\draw.gif" />
+    <Content Include="php\images\annotations\drawIcon.png" />
+    <Content Include="php\images\annotations\draw_line.png" />
+    <Content Include="php\images\annotations\hand_select.gif" />
+    <Content Include="php\images\annotations\icon-eye-gray.gif" />
+    <Content Include="php\images\annotations\icon-eye-gray.png" />
+    <Content Include="php\images\annotations\icon_freehand.png" />
+    <Content Include="php\images\annotations\icon_note.gif" />
+    <Content Include="php\images\annotations\icon_note.png" />
+    <Content Include="php\images\annotations\icon_note_c_f.png" />
+    <Content Include="php\images\annotations\icon_note_c_f_old.gif" />
+    <Content Include="php\images\annotations\icon_note_c_old.gif" />
+    <Content Include="php\images\annotations\icon_note_point.png" />
+    <Content Include="php\images\annotations\icon_rectangle.png" />
+    <Content Include="php\images\annotations\icon_rectangle_filled.png" />
+    <Content Include="php\images\annotations\icon_reply.png" />
+    <Content Include="php\images\annotations\icon_select_area.gif" />
+    <Content Include="php\images\annotations\icon_select_text.gif" />
+    <Content Include="php\images\annotations\icon_select_text.png" />
+    <Content Include="php\images\annotations\icon_strikeout.gif" />
+    <Content Include="php\images\annotations\icon_strikeout.png" />
+    <Content Include="php\images\annotations\marker.cur" />
+    <Content Include="php\images\annotations\marker_big.png" />
+    <Content Include="php\images\annotations\marker_small.png" />
+    <Content Include="php\images\annotations\note.cur" />
+    <Content Include="php\images\annotations\pencil.gif" />
+    <Content Include="php\images\annotations\pencil.png" />
+    <Content Include="php\images\annotations\strikeout_cursor.gif" />
+    <Content Include="php\images\annotations\tick-icon-white.gif" />
+    <Content Include="php\images\annotations\tick-icon.gif" />
+    <Content Include="php\images\annotations\touch\bubble.png" />
+    <Content Include="php\images\annotations\touch\bubble14.png" />
+    <Content Include="php\images\annotations\touch\bubble14g.png" />
+    <Content Include="php\images\annotations\touch\bubble14i.png" />
+    <Content Include="php\images\annotations\touch\bubble20.png" />
+    <Content Include="php\images\annotations\touch\delete-icon.gif" />
+    <Content Include="php\images\annotations\touch\deleteIcon.png" />
+    <Content Include="php\images\annotations\touch\draw-cursor.gif" />
+    <Content Include="php\images\annotations\touch\draw.gif" />
+    <Content Include="php\images\annotations\touch\hand_select.gif" />
+    <Content Include="php\images\annotations\touch\icon-eye-gray2.png" />
+    <Content Include="php\images\annotations\touch\icon_note.gif" />
+    <Content Include="php\images\annotations\touch\icon_note_c_f.png" />
+    <Content Include="php\images\annotations\touch\icon_note_c_f_old.gif" />
+    <Content Include="php\images\annotations\touch\icon_note_c_old.gif" />
+    <Content Include="php\images\annotations\touch\icon_strikeout.gif" />
+    <Content Include="php\images\annotations\touch\icon_strikeout.png" />
+    <Content Include="php\images\annotations\touch\leftarrow_big.gif" />
+    <Content Include="php\images\annotations\touch\lock.png" />
+    <Content Include="php\images\annotations\touch\lockloading.png" />
+    <Content Include="php\images\annotations\touch\pencil_big.gif" />
+    <Content Include="php\images\annotations\touch\rightarrow_big.gif" />
+    <Content Include="php\images\annotations\touch\searchglass_big.png" />
+    <Content Include="php\images\annotations\touch\separator_big.gif" />
+    <Content Include="php\images\annotations\touch\strikeout_cursor.gif" />
+    <Content Include="php\images\annotations\touch\tick-icon-white.gif" />
+    <Content Include="php\images\annotations\touch\tick-icon.gif" />
+    <Content Include="php\images\bar.gif" />
+    <Content Include="php\images\blank.gif" />
+    <Content Include="php\images\find.gif" />
+    <Content Include="php\images\fit.gif" />
+    <Content Include="php\images\flat\bar.png" />
+    <Content Include="php\images\flat\document.png" />
+    <Content Include="php\images\flat\find.png" />
+    <Content Include="php\images\flat\fit.png" />
+    <Content Include="php\images\flat\flip.gif" />
+    <Content Include="php\images\flat\flip.png" />
+    <Content Include="php\images\flat\fullscreen.png" />
+    <Content Include="php\images\flat\hand.png" />
+    <Content Include="php\images\flat\icon-arrow-left.png" />
+    <Content Include="php\images\flat\icon-arrow-right.png" />
+    <Content Include="php\images\flat\pagefit.png" />
+    <Content Include="php\images\flat\printer.png" />
+    <Content Include="php\images\flat\textselect.png" />
+    <Content Include="php\images\flat\thumbs.png" />
+    <Content Include="php\images\flat\touch\document.png" />
+    <Content Include="php\images\flat\touch\fullscreen.png" />
+    <Content Include="php\images\flat\touch\next.png" />
+    <Content Include="php\images\flat\touch\prev.png" />
+    <Content Include="php\images\flat\touch\print.png" />
+    <Content Include="php\images\flat\touch\search.png" />
+    <Content Include="php\images\flat\touch\thumbs.png" />
+    <Content Include="php\images\flat\touch\twodocuments.png" />
+    <Content Include="php\images\flat\touch\zoomin.png" />
+    <Content Include="php\images\flat\touch\zoomout.png" />
+    <Content Include="php\images\flat\twodocuments.png" />
+    <Content Include="php\images\flip.gif" />
+    <Content Include="php\images\fullscreen.gif" />
+    <Content Include="php\images\grab.gif" />
+    <Content Include="php\images\grabbing.gif" />
+    <Content Include="php\images\hand2.gif" />
+    <Content Include="php\images\icon-arrow-left.gif" />
+    <Content Include="php\images\icon-arrow-right.gif" />
+    <Content Include="php\images\ipad-copy.png" />
+    <Content Include="php\images\loader.gif" />
+    <Content Include="php\images\logosmall-trans.png" />
+    <Content Include="php\images\logosmall-transc.png" />
+    <Content Include="php\images\logosmall.png" />
+    <Content Include="php\images\logosmallgray.png" />
+    <Content Include="php\images\pagefit.gif" />
+    <Content Include="php\images\print-icon.gif" />
+    <Content Include="php\images\singlepage.gif" />
+    <Content Include="php\images\sliderbg.gif" />
+    <Content Include="php\images\sliderdot.gif" />
+    <Content Include="php\images\textselect.gif" />
+    <Content Include="php\images\textselectcursor.gif" />
+    <Content Include="php\images\textshifted_fixed.pdf.js" />
+    <Content Include="php\images\thumbs.gif" />
+    <Content Include="php\images\toolbarbg.gif" />
+    <Content Include="php\images\touch\bg.png" />
+    <Content Include="php\images\touch\document.png" />
+    <Content Include="php\images\touch\document3.png" />
+    <Content Include="php\images\touch\fitheight.png" />
+    <Content Include="php\images\touch\fitheight3.png" />
+    <Content Include="php\images\touch\fitwidth.png" />
+    <Content Include="php\images\touch\fitwidth3.png" />
+    <Content Include="php\images\touch\fullscreen.png" />
+    <Content Include="php\images\touch\fullscreen3.png" />
+    <Content Include="php\images\touch\magnifier.png" />
+    <Content Include="php\images\touch\next.png" />
+    <Content Include="php\images\touch\next3.png" />
+    <Content Include="php\images\touch\prev.png" />
+    <Content Include="php\images\touch\prev3.png" />
+    <Content Include="php\images\touch\print.png" />
+    <Content Include="php\images\touch\print3.png" />
+    <Content Include="php\images\touch\search.png" />
+    <Content Include="php\images\touch\search2.png" />
+    <Content Include="php\images\touch\selection_icon.png" />
+    <Content Include="php\images\touch\thumbs.png" />
+    <Content Include="php\images\touch\thumbs3.png" />
+    <Content Include="php\images\touch\twodocuments.png" />
+    <Content Include="php\images\touch\twodocuments3.png" />
+    <Content Include="php\images\touch\zoomin.png" />
+    <Content Include="php\images\touch\zoomout.png" />
+    <Content Include="php\images\twopage.gif" />
+    <Content Include="php\images\zine\bar.gif" />
+    <Content Include="php\images\zine\blank.gif" />
+    <Content Include="php\images\zine\cursor-hand.png" />
+    <Content Include="php\images\zine\cursor-zoom.png" />
+    <Content Include="php\images\zine\document.png" />
+    <Content Include="php\images\zine\document2.png" />
+    <Content Include="php\images\zine\find.gif" />
+    <Content Include="php\images\zine\fit.gif" />
+    <Content Include="php\images\zine\flip.gif" />
+    <Content Include="php\images\zine\grab.gif" />
+    <Content Include="php\images\zine\grabbing.gif" />
+    <Content Include="php\images\zine\hand.png" />
+    <Content Include="php\images\zine\hand2.gif" />
+    <Content Include="php\images\zine\hand3.png" />
+    <Content Include="php\images\zine\icon-arrow-left.gif" />
+    <Content Include="php\images\zine\icon-arrow-right.gif" />
+    <Content Include="php\images\zine\logosmall-trans.png" />
+    <Content Include="php\images\zine\logosmall-transc.png" />
+    <Content Include="php\images\zine\logosmall.png" />
+    <Content Include="php\images\zine\logosmallgray.png" />
+    <Content Include="php\images\zine\magnifying-glass.png" />
+    <Content Include="php\images\zine\pagefit.gif" />
+    <Content Include="php\images\zine\pixel.gif" />
+    <Content Include="php\images\zine\printer.png" />
+    <Content Include="php\images\zine\screen.png" />
+    <Content Include="php\images\zine\sliderdot.png" />
+    <Content Include="php\images\zine\textselect.gif" />
+    <Content Include="php\images\zine\textselectcursor.gif" />
+    <Content Include="php\images\zine\thumbs.gif" />
+    <Content Include="php\images\zine\touch\background.png" />
+    <Content Include="php\images\zine\touch\document.png" />
+    <Content Include="php\images\zine\touch\document_pressed.png" />
+    <Content Include="php\images\zine\touch\fullscreen.png" />
+    <Content Include="php\images\zine\touch\fullscreen_pressed.png" />
+    <Content Include="php\images\zine\touch\next.png" />
+    <Content Include="php\images\zine\touch\next_pressed.png" />
+    <Content Include="php\images\zine\touch\previous.png" />
+    <Content Include="php\images\zine\touch\previous_pressed.png" />
+    <Content Include="php\images\zine\touch\print.png" />
+    <Content Include="php\images\zine\touch\print_pressed.png" />
+    <Content Include="php\images\zine\touch\search.png" />
+    <Content Include="php\images\zine\touch\search_pressed.png" />
+    <Content Include="php\images\zine\touch\selected.png" />
+    <Content Include="php\images\zine\touch\thumbs.png" />
+    <Content Include="php\images\zine\touch\thumbs_pressed.png" />
+    <Content Include="php\images\zine\touch\twodocuments.png" />
+    <Content Include="php\images\zine\touch\twodocuments_pressed.png" />
+    <Content Include="php\images\zine\touch\zoomin.png" />
+    <Content Include="php\images\zine\touch\zoomin_pressed.png" />
+    <Content Include="php\images\zine\touch\zoomout.png" />
+    <Content Include="php\images\zine\touch\zoomout_pressed.png" />
+    <Content Include="php\images\zine\twodocuments.png" />
+    <Content Include="php\images\zine\twodocuments2.png" />
+    <Content Include="php\images\zine\twodocuments_disabled.png" />
+    <Content Include="php\js\expressInstall.swf" />
+    <Content Include="php\js\flexpaper.js" />
+    <Content Include="php\js\FlexPaperViewer.js" />
+    <Content Include="php\js\flexpaper_flashhandlers_htmlui.js" />
+    <Content Include="php\js\flexpaper_handlers.js" />
+    <Content Include="php\js\flexpaper_handlers_debug.js" />
+    <Content Include="php\js\jquery.extensions.min.js" />
+    <Content Include="php\js\jquery.min.js" />
+    <Content Include="php\js\pdf.min.js" />
+    <Content Include="php\js\pdf.worker.min.js" />
+    <Content Include="php\locale\bg_BG\FlexPaper.txt" />
+    <Content Include="php\locale\cz_CS\FlexPaper.txt" />
+    <Content Include="php\locale\de_DE\FlexPaper.txt" />
+    <Content Include="php\locale\dn_DN\FlexPaper.txt" />
+    <Content Include="php\locale\el_EL\FlexPaper.txt" />
+    <Content Include="php\locale\en_US\FlexPaper.txt" />
+    <Content Include="php\locale\es_ES\FlexPaper.txt" />
+    <Content Include="php\locale\fi_FN\FlexPaper.txt" />
+    <Content Include="php\locale\fr_FR\FlexPaper.txt" />
+    <Content Include="php\locale\he_IL\FlexPaper.txt" />
+    <Content Include="php\locale\hu_HU\FlexPaper.txt" />
+    <Content Include="php\locale\it_IT\FlexPaper.txt" />
+    <Content Include="php\locale\lt_LT\FlexPaper.txt" />
+    <Content Include="php\locale\nl_NL\FlexPaper.txt" />
+    <Content Include="php\locale\pl_PL\FlexPaper.txt" />
+    <Content Include="php\locale\pt_BR\FlexPaper.txt" />
+    <Content Include="php\locale\pt_PT\FlexPaper.txt" />
+    <Content Include="php\locale\pv_FN\FlexPaper.txt" />
+    <Content Include="php\locale\ru_RU\FlexPaper.txt" />
+    <Content Include="php\locale\se_SE\FlexPaper.txt" />
+    <Content Include="php\locale\tr_TR\FlexPaper.txt" />
+    <Content Include="php\locale\zh_CN\FlexPaper.txt" />
+    <Content Include="php\locale\zh_TW\FlexPaper.txt" />
+    <Content Include="php\UI_flexpaper_annotations.html" />
+    <Content Include="php\UI_flexpaper_desktop.html" />
+    <Content Include="php\UI_flexpaper_desktop_flat.html" />
+    <Content Include="php\UI_flexpaper_mobile.html" />
+    <Content Include="UI_flexpaper_annotations.html" />
+    <Content Include="UI_flexpaper_desktop.html" />
+    <Content Include="UI_flexpaper_desktop_flat.html" />
+    <Content Include="UI_flexpaper_mobile.html" />
+    <Content Include="UI_flexpaper_mobile_flat.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aspnet\annotations_handlers.ascx.cs">
+      <DependentUpon>annotations_handlers.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet\App_Code\Common.cs" />
+    <Compile Include="aspnet\App_Code\Config.cs" />
+    <Compile Include="aspnet\App_Code\mudraw.cs" />
+    <Compile Include="aspnet\App_Code\pdf2json.cs" />
+    <Compile Include="aspnet\App_Code\pdf2swf.cs" />
+    <Compile Include="aspnet\App_Code\splitpdf.cs" />
+    <Compile Include="aspnet\App_Code\swfextract.cs" />
+    <Compile Include="aspnet\App_Code\swfrender.cs" />
+    <Compile Include="aspnet\App_Code\swfsize.cs" />
+    <Compile Include="aspnet\change_config.aspx.cs">
+      <DependentUpon>change_config.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet\checkdatabaseconnectivity.aspx.cs">
+      <DependentUpon>checkdatabaseconnectivity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet\checkdirpermissions.aspx.cs">
+      <DependentUpon>checkdirpermissions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet\flexpaper.master.cs">
+      <DependentUpon>flexpaper.master</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet\setup.aspx.cs">
+      <DependentUpon>setup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet\simple_document.aspx.cs">
+      <DependentUpon>simple_document.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet\split_document.aspx.cs">
+      <DependentUpon>split_document.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="aspnet\admin_files\controls\uploadify.ashx" />
+    <Content Include="aspnet\config\Web.config" />
+    <Content Include="aspnet\flexpaper.master" />
+    <Content Include="aspnet\locale\ja_JP\FlexPaper.properties" />
+    <Content Include="aspnet\locale\ko_KR\FlexPaper.properties" />
+    <Content Include="aspnet\services\annotations\change_mark.ashx" />
+    <Content Include="aspnet\services\annotations\create_mark.ashx" />
+    <Content Include="aspnet\services\annotations\delete_mark.ashx" />
+    <Content Include="aspnet\services\containstext.ashx" />
+    <Content Include="aspnet\services\numpages.ashx" />
+    <Content Include="aspnet\services\swfsize.ashx" />
+    <Content Include="aspnet\services\view.ashx" />
+    <Content Include="aspnet\Web.config" />
+    <Content Include="locale\ja_JP\FlexPaper.properties" />
+    <Content Include="locale\ko_KR\FlexPaper.properties" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="pdf\Paper.pdf" />
+    <Content Include="pdf\Report.pdf" />
+    <Content Include="php\admin_files\controls\check-exists.php" />
+    <Content Include="php\admin_files\controls\uploadify.php" />
+    <Content Include="php\admin_files\footer.php" />
+    <Content Include="php\admin_files\header.php" />
+    <Content Include="php\annotations_handlers.php" />
+    <Content Include="php\change_config.php" />
+    <Content Include="php\checkdatabaseconnectivity.php" />
+    <Content Include="php\checkdirpermissions.php" />
+    <Content Include="php\config\config.ini.nix.php" />
+    <Content Include="php\config\config.ini.win.php" />
+    <Content Include="php\index.php" />
+    <Content Include="php\lib\common.php" />
+    <Content Include="php\lib\config.php" />
+    <Content Include="php\lib\pdf2json_php5.php" />
+    <Content Include="php\lib\pdf2swf_php5.php" />
+    <Content Include="php\lib\splitpdf_php5.php" />
+    <Content Include="php\lib\swfextract_php5.php" />
+    <Content Include="php\lib\swfrender_php5.php" />
+    <Content Include="php\lib\swfsize_php5.php" />
+    <Content Include="php\locale\ja_JP\FlexPaper.properties" />
+    <Content Include="php\locale\ko_KR\FlexPaper.properties" />
+    <Content Include="php\services\annotations\change_mark.php" />
+    <Content Include="php\services\annotations\create_mark.php" />
+    <Content Include="php\services\annotations\delete_mark.php" />
+    <Content Include="php\services\containstext.php" />
+    <Content Include="php\services\numpages.php" />
+    <Content Include="php\services\swfsize.php" />
+    <Content Include="php\services\view.php" />
+    <Content Include="php\setup.php" />
+    <Content Include="php\simple_document.php" />
+    <Content Include="php\split_document.php" />
+    <Content Include="FlexPaper Annotations API.pdf" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="aspnet\docs\" />
+    <Folder Include="aspnet\pdf\" />
+    <Folder Include="bin\" />
+    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="php\docs\" />
+    <Folder Include="php\pdf\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53690/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

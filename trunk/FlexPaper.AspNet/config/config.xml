@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <!-- Requirements -->
+  <test_pdf2swf>true</test_pdf2swf>
+  <test_pdf2json>true</test_pdf2json>
+  <test_mudraw>false</test_mudraw>
+  <!-- General Settings -->
+  <allowcache>false</allowcache>
+  <splitmode>true</splitmode>
+  <!--<path.pdf>D:\flexpaper\pdf\</path.pdf>-->
+  <path.pdf>G:\DocEncyclic\docencyclic\DocEncyclic_proj\trunk\Tencent.OA.DocEncyclic\Tencent.OA.DocEncyclic.App.WebSite\Data\PreviewDoc\</path.pdf>
+  <path.swf>D:\flexpaper\working\</path.swf>
+  <!-- External Commands -->
+  <cmd.conversion.singledoc>"D:\Program Files (x86)\SWFTools\pdf2swf.exe" "{path.pdf}{pdffile}" -o "{path.swf}{pdffile}.swf" -f -T 9 -t -s storeallcharacters -s linknameurl</cmd.conversion.singledoc>
+  <cmd.conversion.splitpages>"D:\Program Files (x86)\SWFTools\pdf2swf.exe" "{path.pdf}{pdffile}" -o "{path.swf}{pdffile}%.swf" -f -T 9 -t -s storeallcharacters -s linknameurl</cmd.conversion.splitpages>
+  <cmd.searching.extracttext>"D:\Program Files (x86)\SWFTools\swfstrings.exe" "{path.swf}{swffile}"</cmd.searching.extracttext>
+  <cmd.conversion.renderpage>"D:\Program Files (x86)\SWFTools\swfrender.exe" "{path.swf}{swffile}" -p {page} -o "{path.swf}{pdffile}_{page}.png" -X 1024 -s keepaspectratio</cmd.conversion.renderpage>
+  <cmd.conversion.mudraw>mudraw.exe -r120 -m -o "{path.swf}{pdffile}_%d.png" "{path.pdf}{pdffile}" {page}</cmd.conversion.mudraw>
+  <cmd.conversion.rendersplitpage>"D:\Program Files (x86)\SWFTools\swfrender.exe" "{path.swf}{swffile}" -o "{path.swf}{pdffile}_{page}.png" -X 1024 -s keepaspectratio</cmd.conversion.rendersplitpage>
+  <cmd.conversion.jsonfile>"C:\Program Files (x86)\pdf2json\pdf2json.exe" "{path.pdf}{pdffile}" -enc UTF-8 -hidden -compress "{path.swf}{pdffile}.js"</cmd.conversion.jsonfile>
+  <cmd.conversion.splitjsonfile>"C:\Program Files (x86)\pdf2json\pdf2json.exe" "{path.pdf}{pdffile}" -enc UTF-8 -compress -hidden -split 10 "{path.swf}{pdffile}_%.js"</cmd.conversion.splitjsonfile>
+  <cmd.conversion.splitpdffile>"D:\Program Files (x86)\PDFtk\bin\pdftk.exe" "{path.pdf}{pdffile}" burst output {path.swf}{pdffile}_%1d.pdf compress</cmd.conversion.splitpdffile>
+  <cmd.conversion.test>{path.swftools}pdf2swf.exe "{path.pdf}Paper.pdf" -o "{path.swf}flexpaper_test.swf" -p 1 -f -T 9 -t -s storeallcharacters</cmd.conversion.test>
+  <cmd.conversion.pdf2jsontest>{path.pdf2json}pdf2json.exe "{path.pdf}Paper.pdf" -enc UTF-8 -compress "{path.swf}flexpaper_test.js"</cmd.conversion.pdf2jsontest>
+  <pdf2swf>True</pdf2swf>
+  <admin.username>admin</admin.username>
+  <admin.password>admin</admin.password>
+  <renderingorder.primary>flash</renderingorder.primary>
+  <renderingorder.secondary>html</renderingorder.secondary>
+  <licensekey>#V2ZzfWBFXlpeQBhxBUlCWFVfZQ</licensekey>
+</config>

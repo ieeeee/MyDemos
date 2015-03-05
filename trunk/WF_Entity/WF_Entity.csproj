@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{66B3392F-FF65-4CAC-AEBE-77EE7C02335A}</ProjectGuid>
+    <ProjectGuid>{F292B6F7-B57C-4027-B91F-F7AE99F0A6A3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DM.Common.libs</RootNamespace>
-    <AssemblyName>DM.Common.libs</AssemblyName>
+    <RootNamespace>WF_Entity</RootNamespace>
+    <AssemblyName>WF_Entity</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -20,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -28,23 +30,11 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\_libs\log4net.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="NPOI">
-      <HintPath>..\_libs\NPOI.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,25 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Lgr.cs" />
-    <Compile Include="OperatorLog.cs" />
+    <Compile Include="Contact.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Wf_ChineseCalendar.cs" />
-    <Compile Include="Wf_ConvertHelper.cs" />
-    <Compile Include="Wf_CookieHelper.cs" />
-    <Compile Include="Wf_DataTableExtension.cs" />
-    <Compile Include="Wf_FileReadOrWrite.cs" />
-    <Compile Include="Wf_FileUploadHelper.cs" />
-    <Compile Include="Wf_GetAjaxRsOfJSON.cs" />
-    <Compile Include="Wf_MappingControl.cs" />
-    <Compile Include="Wf_NPOIHelper.cs" />
-    <Compile Include="Wf_PaginationUrlManager.cs" />
-    <Compile Include="Wf_RegexHelper.cs" />
-    <Compile Include="Wf_StringExtension.cs" />
-    <Compile Include="Wf_StringHelper.cs" />
-    <Compile Include="Wf_VCodeCreater.cs" />
-    <Compile Include="Wf_VideoWork.cs" />
-    <Compile Include="Wf_ViewPartialManager.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

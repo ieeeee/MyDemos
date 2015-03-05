@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script src="Scriptss/jquery-1.10.2.min.js"></script>
+    <script src="Scriptss/knockout-3.0.0.js"></script>
+    <script type="text/javascript">
+        $.getJSON("http://localhost/webhost/api/contacts", {}, function (data, textStatus, jqXHR) {
+
+            if (data) {
+                //table head col
+                var table_thead = "";
+                var obj = data[0];
+                var cols = new Array();
+                table_thead = table_thead + "<tr>";
+                for (attribute in obj) {
+                    table_thead += "<th>" + attribute + "</th>";
+                }
+                table_thead = table_thead + "</tr>";
+                $('#table_users > thead').append(table_thead);
+
+                $.each(data, function (i, n) {
+                    var tr = "<tr><td>" + n.Id + "</td><td>" + n.Name + "</td><td>" + n.PhoneNo + "</td><td>" + n.EmailAddress + "</td><td>" + n.Address + "</td></tr>";
+                    $('#table_users > tbody').append(tr);
+                });
+                console.log(data);
+            }
+        });
+
+        $.getJSON("http://localhost/selfhost/api/contacts", {}, function (data, textStatus, jqXHR) {
+
+            if (data) {
+                //table head col
+                var table_thead = "";
+                var obj = data[0];
+                var cols = new Array();
+                table_thead = table_thead + "<tr>";
+                for (attribute in obj) {
+                    table_thead += "<th>" + attribute + "</th>";
+                }
+                table_thead = table_thead + "</tr>";
+                $('#table_users_selfhost > thead').append(table_thead);
+
+                $.each(data, function (i, n) {
+                    var tr = "<tr><td>" + n.Id + "</td><td>" + n.Name + "</td><td>" + n.PhoneNo + "</td><td>" + n.EmailAddress + "</td><td>" + n.Address + "</td></tr>";
+                    $('#table_users_selfhost > tbody').append(tr);
+                });
+                console.log(data);
+            }
+        });
+    </script>
+</head>
+<body>
+    <table id="table_users">
+        <thead>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <br />
+    <br />
+    <hr />
+
+    <table id="table_users_selfhost">
+        <thead>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <br />
+    <br />
+    <hr />
+
+
+
+</body>
+</html>
